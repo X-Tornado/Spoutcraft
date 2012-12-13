@@ -34,9 +34,8 @@ public class ServerList {
 			for (int var3 = 0; var3 < var2.tagCount(); ++var3) {
 				this.servers.add(ServerData.getServerDataFromNBTCompound((NBTTagCompound)var2.tagAt(var3)));
 			}
-		//TODO Spout catch NullPointerException when fetching servers, return if none
-		} catch (NullPointerException var4) {
-			System.out.println("WARNING: Encountered a null reference when acquiring servers! This is typically normal and will be ignored.");
+		//TODO Spout catch NullPointerException when fetching servers, ignore if none
+		} catch (NullPointerException ignore) {
 		//TODO Spout end
 		} catch (IOException e) {
 			e.printStackTrace();
