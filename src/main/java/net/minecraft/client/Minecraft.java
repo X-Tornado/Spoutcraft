@@ -393,7 +393,7 @@ public abstract class Minecraft implements Runnable, IPlayerUsage {
 		} else {
 			Display.setDisplayMode(new DisplayMode(this.displayWidth, this.displayHeight));
 		}
-
+		
 		Display.setTitle("Minecraft Minecraft 1.4.5");
 		System.out.println("LWJGL Version: " + Sys.getVersion());
 
