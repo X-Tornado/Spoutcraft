@@ -546,10 +546,11 @@ public abstract class Minecraft implements Runnable, IPlayerUsage {
 	 * gets the working dir (OS specific) for minecraft
 	 */
 	public static File getMinecraftDir() {
+		//TODO - Spout Use .spoutcraft and not .minecraft
 		if (minecraftDir == null) {
-			minecraftDir = getAppDir("minecraft");
+			minecraftDir = getAppDir("spoutcraft");
 		}
-
+		//TODO - Spout end
 		return minecraftDir;
 	}
 
